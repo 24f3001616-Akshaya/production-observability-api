@@ -71,9 +71,9 @@ async def observe_requests(request: Request, call_next):
     return response
 
 
+
 @app.get("/work")
 def do_work(n: int = Query(default=1, ge=0, le=100000)):
-    # Perform n simple units of work.
     done = 0
     for _ in range(n):
         done += 1
@@ -82,7 +82,6 @@ def do_work(n: int = Query(default=1, ge=0, le=100000)):
         "email": EMAIL,
         "done": done,
     }
-
 
 @app.get("/metrics")
 def metrics():
