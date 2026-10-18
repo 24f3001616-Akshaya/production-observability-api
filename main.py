@@ -14,7 +14,7 @@ from prometheus_client import CONTENT_TYPE_LATEST
 app = FastAPI()
 
 # Replace this with your actual registered assignment email.
-EMAIL = "YOUR_REGISTERED_EMAIL@example.com"
+EMAIL = "24f3001616@ds.study.iitm.ac.in"
 
 # Count every incoming HTTP request.
 # Prometheus exposes this counter as http_requests_total.
